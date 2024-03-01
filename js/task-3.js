@@ -1,13 +1,9 @@
 function checkForSpam(message) {
-    const spam = `spam`;
-   const sale = `sale`;
-    const messageSmallCase = message.toLowerCase();
-    const spamSmallCase = spam.toLowerCase();
-    const saleSmallCase = sale.toLowerCase();
-    if (messageSmallCase.includes(spamSmallCase) || messageSmallCase.includes(saleSmallCase)) {
-        console.log(true);
+     const messageSmallCase = message.toLowerCase();
+       if (messageSmallCase.includes(`spam`) || messageSmallCase.includes(`sale`)) {
+        return true;
     } else {
-        console.log(false);
+        return false;
     }
    
 }
